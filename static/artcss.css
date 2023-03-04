@@ -1,0 +1,68 @@
+body::before {
+    content: '';
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    z-index: 0;
+    background-color: #16151A;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+
+   .pixel_font {
+     font-family: 'VT323', monospace;
+   }
+
+   .open_text {
+     position:relative;
+     top: 320px;
+   }
+
+   .open_site {
+     color: white;
+   }
+
+   .links {
+     color: white;
+   }
+
+   .card_place {
+     position: relative;
+     top: 40px;
+   }
+
+   .img_card {
+     width: 100%;
+     height: 300px;
+     position: relative;
+   }
+
+  .click_me {
+    position: relative;
+    top: 110px;
+  }
+
+  .click_me2 {
+    position: relative;
+    top: 255px;
+  }
+
+  .click_me_decor {
+    text-decoration: none;
+    color: white;
+  }
+
+  .click_me_decor:hover {
+    color: white;
+    opacity: 0.7;
+  }
+
+ .set_arts {
+  position: relative;
+  top: 200px;
+ }
+
+ .footer {
+   position: relative;
+   top:250px;
+ }

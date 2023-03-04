@@ -1,0 +1,80 @@
+body::before {
+    content: '';
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    z-index: 0;
+    background-image: url("https://gifimage.net/wp-content/uploads/2018/11/cyberpunk-pixel-art-gif-5.gif");
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(3px);
+   }
+
+body {
+background: #000
+}
+
+.card {
+border: none;
+top: 20px;
+height: 100%
+
+}
+
+.forms-inputs {
+position: relative
+}
+
+.forms-inputs span {
+position: absolute;
+top: -18px;
+left: 10px;
+background-color: #fff;
+padding: 5px 10px;
+font-size: 15px
+}
+
+.forms-inputs input {
+height: 50px;
+border: 2px solid #eee
+}
+
+.forms-inputs input:focus {
+box-shadow: none;
+outline: none;
+border: 2px solid #000
+}
+
+.btn {
+height: 50px
+}
+
+.success-data {
+display: flex;
+flex-direction: column
+}
+
+.bxs-badge-check {
+font-size: 90px
+}
+
+.pixel_font {
+  font-family: 'VT323', monospace;
+}
+
+.click_me2 {
+  position: relative;
+  top: 100px;
+  color:  white;
+  text-decoration: none;
+}
+
+.click_me_decor {
+  text-decoration: none;
+  color: white;
+}
+
+.click_me_decor:hover {
+  color: white;
+  opacity: 0.7;
+}

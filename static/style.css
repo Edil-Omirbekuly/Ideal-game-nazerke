@@ -1,0 +1,82 @@
+body::before {
+    content: '';
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    z-index: 0;
+    background-image: url('https://lemoncraft.ru/forum/uploads/monthly_2020_12/cyber.gif.e7e2a0a3e8197bea9102d5fc7ccc554e.gif');
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(8px);
+   }
+
+   body {
+       color: #fff;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+      }
+
+.pixel_font {
+  font-family: 'VT323', monospace;
+}
+
+.open_text {
+  position:relative;
+  top: 320px;
+}
+
+.open_site {
+  color: white;
+}
+
+.open_site:hover {
+  opacity: 0.5;
+  text-decoration: none;
+  color: white;
+}
+
+.welcome_text {
+  position: relative;
+  top:640px;
+}
+
+.img_card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img_card {
+  position: relative;
+}
+
+.img_general {
+  position: relative;
+  height: 200px;
+}
+
+.carousel {
+  position:relative;
+  top: 63px;
+  height: 600px !important;
+}
+
+.carousel-item img {
+  height: 600px !important;
+  width: 90% !important;
+  margin: 0 auto;
+}
+.carousel-indicators li {
+  border-color: #000;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
+.fontcolor{
+  color: black;
+}
+
+.card_place {
+  position: relative;
+  top:1070px;
+}

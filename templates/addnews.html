@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Space</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='news.css') }}">
+  <link type="Image/x-icon" href="static/images/favicon.ico" rel="icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="pixel_font">
+<h1 class="text-center" > New post</h1>
+
+        <form action="/mynews" method="post" class="text-center">
+            <a>Title</a><br>
+            <input type="text" name="addTitle" id="addTitle" placeholder="title" value="{{allnews.title}}"><br>
+            <a>Content</a><br>
+            <input type="text" name="addContent" id="addContent" placeholder="content" value="{{allnews.content}}"><br>
+            <a>Img</a><br>
+            <input type="text" name="addSource" id="addSource" placeholder="url to img" value="{{allnews.img_source}}"><br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+</div>
+</body>
+</html>

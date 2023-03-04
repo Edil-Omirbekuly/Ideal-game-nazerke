@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Game Space</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='regcss.css') }}">
+<link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+    <link type="Image/x-icon" href="static/images/favicon.ico" rel="icon">
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js'></script>
+</head>
+<body oncontextmenu='return false' class='snippet-body'>
+<div class="placement">
+ <div class="pixel_font">
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-7">
+            <div class="card px-5 py-4" id="form1">
+                <div class="form-data" v-if="!submitted">
+                    <div class="text-center mb-4">
+                        <h4>Sign in</h4>
+                    </div>
+                    <form method="POST">
+                        <div class="form-group">
+                            <div class="forms-inputs mb-4"> <span>Username</span> <input name="uname" class="form-control" id="username" type="text" v-model="username" v-bind:class="{'form-control':true, 'is-invalid' : !validUsername(username) && usernameBlured}" v-on:blur="usernameBlured = true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                    <div class="forms-inputs mb-4"> <span>Password </span> <input name="passw" class="form-control" id="password" type="password" v-model="password" v-bind:class="{'form-control':true, 'is-invalid' : !validPassword(password) && passwordBlured}" v-on:blur="passwordBlured = true">
+                    </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100" class="btn form-control btn-default">Log in</button>
+                        </form>
+                    <div class="text-center pb-0 mt-4">
+                        <h2>Don't have account yet? <a href="/registration">Register now</a></h2>
+                    </div>
+                <div class="success-data" v-else>
+                    <button type="button" onclick="history.back()" class="btn btn-secondary btn-lg click_me2">
+                    <a class="click_me_decor" href="index">GET BACK</a>
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
